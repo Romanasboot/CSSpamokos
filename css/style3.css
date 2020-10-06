@@ -1,0 +1,59 @@
+.container{
+	background-color: #eee;
+	width: 80%;
+	height: 500px;
+	margin: 100px auto;
+	position: relative;
+}
+
+
+div div{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+    text-transform: uppercase;
+	line-height: 180px;
+	margin: 0 auto;
+}
+
+div div:nth-child(1){
+	background-color: yellow;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+div div:nth-child(2){
+	background-color: green;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+
+}
+div div:nth-child(3){
+	background-color: red;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	z-index: 100;
+
+}
+div div:nth-child(4){
+	background-color: blue;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+
+}
+div div:nth-child(5){
+	background-color: gray;
+	position: fixed;
+	left: 40%;
+	bottom: 0;
+
+
+
+}
