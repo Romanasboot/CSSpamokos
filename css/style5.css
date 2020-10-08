@@ -1,52 +1,75 @@
-*{
-	margin: 0;
-	padding: 0;
+header {
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+  background-color: lightblue;
+  text-align: center;
+  color: white;
 }
 
-header{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	height: 100px;
-	background-color: lightgray;
-	text-align: center;
-}
-main{
-	display: flex;
-	flex-flow: column wrap;
-	flex-direction: column;
-	width 200px;
-	margin: 20px;
-	background-color: #ee44cc;
+.container {
+  display: flex;
+  height: 400px;
+  margin: 20px 0px;
 }
 
-aside{
-	display: flex;
-	flex-flow: column-reverse;
-	width: 200px;
-	background-color: yellow;
+main, aside {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  color: white;
 }
 
-
-section{
-	display: flex;
-	flex-direction: row;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	align-content: flex-start;
-	height: 150px;
-	background-color: #aabbcc;
-	flex-basis: 100px auto;
-	flex-grow: auto;
-
+main {
+	flex-grow: 1;
+}
+aside {
+	flex-grow: 2;
+}
+main article:first-child {
+  flex: 2;
+  background-color: darkgray;
 }
 
+main article:last-child {
+  flex: 1;
+  background-color: lightgreen;
+}
 
-footer{
-    display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	height: 100px;
-	background-color: gray;
-	text-align: center;
+aside article:first-child {
+  background-color: tomato;
+  flex: 1;
+}
+
+aside article:last-child {
+  flex: 2;
+  background-color: grey;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: white;
+}
+
+section article:first-child {
+  flex: 2;
+  background-color: green;
+}
+
+section article:last-child {
+  flex: 1;
+  background-color: lightpink;
+}
+
+footer {
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+  background-color: orange;
+  text-align: center;
+  color: white
 }
