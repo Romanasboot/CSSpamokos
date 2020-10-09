@@ -62,7 +62,7 @@ section article:first-child {
 
 section article:last-child {
   flex: 1;
-  background-color: lightpink;
+  background-color: violet;
 }
 
 footer {
